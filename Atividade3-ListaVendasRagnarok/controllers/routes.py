@@ -1,4 +1,8 @@
-from flask import render_template, request
+from flask import render_template, request, url_for, redirect
+from models.database import db, Ragnarok
+
+import urllib
+import json
 
 interesse=[]
 itens =[{'Item': 'Colar do Rei Salomão', 'Data': '11/03/2024', 'Valor':'150.000.000','Ultima':'01/02/2024'}]
